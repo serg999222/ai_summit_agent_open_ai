@@ -10658,3 +10658,32 @@ Julia Nimchinski: Bye, bye.
 
 Bharat Jindal: Awesome. Thank you. Bye.
 
+Fullcast is the RevOps platform that bridges the gap between go-to-market planning and execution. By integrating territories, quotas, and capacity planning into a single, AI-enabled system, it ensures your strategies are always aligned and adaptable. Say goodbye to spreadsheets and hello to seamless scalability.
+
+Bounti transforms traditional sales incentives into dynamic, agent-driven experiences that automatically adapt to real-time performance and market shifts. Instead of static commission structures, Bounti leverages intelligent agents to optimize rewards, align revenue behaviors, and maximize sales team motivation. It’s not just incentives—it’s agentic revenue acceleration.
+
+Regie is the AI-powered prospecting platform that brings agentic intelligence to your sales outreach—unifying email, social, and calls into one seamless, hyper-personalized system. By leveraging dynamic agent-driven prompts and enriched data insights, Regie enables sales teams to prioritize leads, increase engagement, and accelerate pipeline growth. Welcome to the future of prospecting: fully agentic, continuously optimized, always personalized.
+
+Gainsight, the leading Customer Success platform, drives growth by unifying the post-sales journey with tools for success, education, product experience, and community. Used by nearly 200 public companies, Gainsight powers acquisition, retention, and expansion. Learn more about top users like GE Digital and Workday.
+
+Vivun is the leading provider of Technical Sales solutions, which includes the world’s first AI Sales Engineer, and is fully dedicated to helping companies use AI to scale technical expertise, build better products, and run better operations. Customers like ADP, Coupa, Docusign, Elastic, Seismic, and Snowflake leverage Vivun solutions to win more deals faster, with a lower cost of sale.
+
+Explorium revolutionizes how GTM teams access external data by automating discovery, enrichment, and integration through agentic AI. Instead of manual data wrangling, Explorium’s intelligent agents autonomously identify critical signals, surface actionable insights, and seamlessly feed your go-to-market motions. Elevate decision-making, eliminate guesswork, and empower GTM strategies with Explorium’s agent-driven data advantage.
+
+Navu is the AI companion that transforms your B2B website into a dynamic, conversion-driving experience. It guides visitors in real-time, delivering personalized insights and boosting engagement without the need for a complete overhaul. Think of it as your digital concierge, turning passive browsing into active buying.
+
+FunnelStory is your AI-powered revenue guardian, proactively identifying and mitigating churn risks before they impact your bottom line. By analyzing usage patterns, conversations, and business intelligence, it offers a unified model to detect and address potential customer attrition. With FunnelStory, you can act decisively on early warning signs, safeguarding revenue and staying ahead of the competition.
+
+Ask-AI empowers your team with no-code AI assistants that seamlessly integrate with your company data. These assistants enhance employee productivity and elevate customer experiences by providing instant, intelligent responses. It’s like having a knowledgeable colleague available 24/7, ready to assist with any query.
+
+Vidyard revolutionizes business communication with its comprehensive video platform, enabling personalized video messaging at scale. From prospecting to closing deals, Vidyard’s AI-driven tools help you connect with audiences more effectively, turning viewers into customers. It’s not just video; it’s your new sales superpower.
+
+Common Room is an AI-powered customer intelligence platform that unifies signals across channels, providing actionable insights to enhance go-to-market strategies.
+
+Momentum is the AI-native revenue orchestration platform that transforms every customer interaction into structured, actionable GTM data—automating workflows, surfacing insights, and driving predictable revenue. It seamlessly integrates with your existing tools like Salesforce and Slack, ensuring your team stays focused on selling while Momentum handles the admin. Think of it as your always-on GTM co-pilot, turning conversations into conversions.
+
+Amoeba is your AI-powered data scientist, transforming complex data into clear, actionable insights. Utilizing advanced AI technologies, it automates the journey from data collection to decision-making, empowering your go-to-market teams to focus on growth. With Amoeba, data-driven decisions become second nature.
+
+Fullcast is the RevOps platform that bridges the gap between go-to-market planning and execution. By integrating territories, quotas, and capacity planning into a single, AI-enabled system, it ensures your strategies are always aligned and adaptable. Say goodbye to spreadsheets and hello to seamless scalability.
+
+Aviso is your AI-guided revenue platform, delivering predictive analytics and conversational intelligence to supercharge your sales efforts. With over 20 patents in AI technology, it provides precise forecasting and actionable insights, helping you close deals faster and more effectively. Aviso doesn’t just predict the future; it helps you shape it.

@@ -1,33 +1,3 @@
-# from fastapi import FastAPI, Request
-# from langchain_community.embeddings import OpenAIEmbeddings
-# from langchain_community.vectorstores import FAISS
-# from langchain_community.chat_models import ChatOpenAI
-# from langchain.chains import RetrievalQA
-# from dotenv import load_dotenv
-# import os
-
-# load_dotenv()
-
-# app = FastAPI()
-
-# # Ініціалізація компонентів
-# llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
-# embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
-# vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
-# retriever = vectorstore.as_retriever()
-# qa_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
-
-# @app.get("/")
-# def root():
-#     return {"message": "AI агент запущений ✅"}
-
-# @app.post("/ask")
-# async def ask_question(request: Request):
-#     data = await request.json()
-#     query = data.get("question")
-#     answer = qa_chain.run(query)
-#     return {"answer": answer}
-
 
 from fastapi import FastAPI, Request
 from langchain_community.embeddings import OpenAIEmbeddings
@@ -46,7 +16,13 @@ load_dotenv()
 app = FastAPI()
 
 # 1. Ініціалізація компонентів
-llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
+# llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(
+    model_name="gpt-4o-mini",
+    temperature=0.0,
+    openai_api_key=os.getenv("OPENAI_API_KEY")
+)
+
 embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
 
 # 2. Якщо індексу немає — створюємо з текстового джерела
@@ -69,11 +45,13 @@ retriever = vectorstore.as_retriever()
 custom_prompt = PromptTemplate(
     input_variables=["context", "question"],
     template="""
-You are the assistant for the AGENTIC AI SUMMIT. Your knowledge is strictly limited to the information provided in the context retrieved from the summit's knowledge base.
+You are the assistant for the AGENTIC AI SUMMIT.Your name AGENTIC AI SUMMIT Agent. Your knowledge is strictly limited to the information provided in the context retrieved from the summit's knowledge base.
 
 Instructions:
-- If the question is directly or indirectly related to the AGENTIC AI SUMMIT (topics, discussions, speakers, sessions, etc.) but the context does not contain enough information to answer it, respond by saying that the question is related to the event, but you currently don't have information about it.
-- If the question is unrelated to the event, respond with: "I can only answer questions related to this event."
+- If the user asks who are you, respond: "I am AGENTIC AI SUMMIT Agent."
+- If the user asks for your name, respond: "My name is AGENTIC AI SUMMIT Agent."
+- If the question appears unrelated to the event, respond with: "I'm sorry, I can only provide answers based on the topics and materials from the AGENTIC AI SUMMIT."
+- If the question seems relevant to the event but no matching information is found in the context, respond with: "I couldn’t find any information about that during the event."
 
 Context:
 {context}

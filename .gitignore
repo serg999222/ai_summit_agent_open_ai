@@ -1,7 +1,7 @@
 # Віртуальне середовище
 venv/
 .venv/
-raw_transcript/
+faiss_index/
 
 # Секретні змінні оточення
 .env

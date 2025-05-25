@@ -42,7 +42,7 @@ else:
 retriever = vectorstore.as_retriever()
 
 custom_prompt = PromptTemplate(
-    input_variables=["chat_history", "question"],
+    input_variables=["context", "chat_history", "question"],
     template="""
 You are the assistant for the AGENTIC AI SUMMIT. Your name is AGENTIC AI SUMMIT Agent.
 
@@ -93,6 +93,9 @@ Instructions:
 - If the question includes a term that closely resembles a known name or topic from the context (e.g. "vivan" instead of "Vivun"), ask the user: "Did you mean 'Vivun'?" before proceeding to answer.
 - If the question does not contain an exact name, try to infer who the question is about based on recent mentions (e.g., "he", "they", "the speaker").
 
+Context:
+{context}
+
 Chat history:
 {chat_history}
 
@@ -129,8 +132,8 @@ async def ask_question(request: Request):
     data = await request.json()
     question = data.get("question")
     chat_history = data.get("chat_history", "")
-    result = qa_chain.run({
-        "question": question,
-        "chat_history": chat_history
+    result = qa_chain.invoke({
+     "question": question,
+     "chat_history": chat_history
     })
     return {"answer": result}

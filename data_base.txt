@@ -1,4 +1,22 @@
-WEBVTT
+May 6 — Fireside Chat with Amos Bar-Joseph — The Autonomous Business OS (Panel Summary): Discussed the end of “growth at all costs” and the rise of the autonomous business operating system, where efficiency and AI augmentation are core. Emphasized the shift from scaling by headcount to scaling by intelligence. Highlighted the importance of human-AI collaboration: using AI to multiply the impact of top human talent, not just to replace jobs.
+May 6 — Fireside Chat with Jon Miller & Omer Gotlieb — The AI Mixologist (Panel Summary): Used cocktail-making as a metaphor for marketing and personalization in the AI era. Explained that successful personalization involves choosing the right offer, timing, channel, and content. Argued that AI should enable scalable, context-aware personalization and that “reasoning AI” will outperform rule-based engines. Warned that trust and authenticity are essential for AI-driven interactions.
+May 6 — Fireside Chat with Elias Torres — What Comes After The CRM (Panel Summary): Explored how CRM systems must evolve beyond data management to enable true relationship-building. Advocated for unifying customer data and focusing on high-quality, personalized experiences, akin to luxury hospitality. Stressed that the future of CRM is human-centric: systems should remind, suggest, and enable meaningful action, not just store information.
+May 6 — Executive Roundtable — 11x or 0x? What it really takes to make agentic AI work (Panel Summary): Senior executives discussed the cultural and organizational shifts required to succeed with agentic AI. Topics included change management, aligning incentives, and building trust in AI systems.
+May 6 — Executive Roundtable — Agentic Marketing (Panel Summary): Examined how agentic AI is transforming marketing strategies. Discussed new approaches to segmentation, automation, and real-time engagement.
+May 6 — Demos (Bounti, Regie, Gainsight, Vivun) (Panel Summary): Startups presented live demonstrations of agentic AI solutions for go-to-market, revenue operations, and sales enablement. Showcased practical benefits: faster experimentation, data-driven decisions, and leaner teams.
+May 7 — Fireside Chat with Godard Abel — The Future of GTM (Panel Summary): Analyzed how AI agents are reinventing go-to-market strategies. Highlighted the growing role of automation in sales, partnerships, and customer success.
+May 7 — Fireside Chat with Wade Foster — How to Transform Your Organization with AI (Panel Summary): Shared real-world stories about organizational transformation powered by AI. Focused on workflow automation and the reimagining of traditional business processes.
+May 7 — Fireside Chat with Mark Roberge — The Agentic Dilemma (Panel Summary): Addressed challenges in adopting agentic AI, such as organizational resistance and the balance between automation and human input. Discussed strategies for overcoming barriers and maximizing AI’s value.
+May 7 — Fireside Chat with Brett Queener — The Change Economy (Panel Summary): Discussed macroeconomic drivers pushing businesses to embrace AI and autonomous agents. Explored how companies can adapt to a rapidly changing environment.
+May 7 — Executive Roundtable — The New Agentic AI Playbook for CROs (Panel Summary): CROs and sales leaders shared new strategies for leveraging AI in revenue operations. Emphasized the importance of agility, real-time data, and AI-empowered teams.
+May 7 — Executive Roundtable — How to Build Winning GTM Agents (Panel Summary): Focused on practical steps to design, deploy, and scale AI agents in GTM (go-to-market) operations. Shared case studies and best practices.
+May 7 — Demos (Explorium, Navu, Ben Kus, FunnelStory) (Panel Summary): Showcased agentic solutions for data enrichment, analytics, workflow orchestration, and sales. Demonstrated how AI-powered tools can drive efficiency and revenue growth.
+May 8 — Fireside Chat with Manny Medina — Business Models in the Agentic Age (Panel Summary): Explored new business models emerging from widespread AI agent adoption. Emphasized the need for agility and rapid innovation to stay competitive.
+May 8 — Fireside Chat with Tiffani Bova — Reinventing the CXO Role (Panel Summary): Discussed how the roles of C-level executives are evolving as organizations become more AI-native. Highlighted new leadership competencies required in the age of agentic AI.
+May 8 — Fireside Chat with Latané Conant — Decoding Buyer Intent with 6AI (Panel Summary): Showed how advanced AI can analyze buyer intent signals to enable more personalized, data-driven sales and marketing.
+May 8 — Executive Roundtable — AI-Native Growth (Panel Summary): Leaders shared strategies for fostering sustainable growth in AI-first organizations. Topics included talent development, product strategy, and customer-centricity.
+May 8 — VC Roundtable — GPUs Over People? (Panel Summary): Venture capitalists debated the value of AI infrastructure versus human capital. Discussed trends in AI investment and startup scaling.
+May 8 — Demos (Ask-AI, Vidyard, Common Room, Momentum, Amoeba AI, Fullcast, Aviso) (Panel Summary): Presented a range of agentic AI applications: from knowledge management and video engagement to sales enablement and revenue forecasting. Illustrated the diversity of use cases and real business impact of AI agents.
 Julia Nimchinski: And we are live
 Julia Nimchinski: welcome to the agenda Ki Summit. Over the next 3 days we'll dive in into what it really takes to make agenda ki work.
 Julia Nimchinski: and we're really really excited to kick things off
@@ -5402,28 +5420,32 @@ Watch recordings
 Event Overview
 AI-native GTM, Business Models, and Scale
 Gone are the days of bloated headcounts; agentic AI empowers hyper-lean teams to surge toward $100M ARR. This summit is your front-row seat to the dawn of AI-native GTM, led by visionary CXOs, analysts, and VCs who reveal how to innovate in an era where compute investments overshadow headcount, while outdated strategies and processes meet their AI-native replacements—spanning business models, fundraising, leadership, and beyond.
-Hear from  
+Hear from 
 the experts
 Explore how industry leaders are shifting from augmenting existing models to building AI-native GTM strategies from the ground up.
-Master  
+Master 
 Agentic AI tech
-Explore the next wave of agentic  AI vendors redefining GTM, Sales,  Marketing, CS, and RevOps.
+Explore the next wave of agentic 
+AI vendors redefining GTM, Sales, 
+Marketing, CS, and RevOps.
 Get expert 
 guidance 
 Get 1:1 coaching or consultation with our CXO, VC, and analyst speakers—don’t just hear the trends, walk away ready to operationalize them.
-Expand your 
+Expand your
 network
 Join live conversations with AI leaders across sectors to explore emerging models, best practices, and cross-industry learnings.
-Hear from  
+Hear from 
 the experts
 Explore how industry leaders are shifting from augmenting existing models to building AI-native GTM strategies from the ground up.
-Master  
+Master 
 Agentic AI tech
-Explore the next wave of agentic  AI vendors redefining GTM, Sales,  Marketing, CS, and RevOps.
+Explore the next wave of agentic 
+AI vendors redefining GTM, Sales, 
+Marketing, CS, and RevOps.
 Get expert 
 guidance 
 Get 1:1 coaching or consultation with our CXO, VC, and analyst speakers—don’t just hear the trends, walk away ready to operationalize them.
-Expand your 
+Expand your
 network
 Join live conversations with AI leaders across sectors to explore emerging models, best practices, and cross-industry learnings.
 Summit Preview
@@ -7113,7 +7135,8 @@ Don’t miss the premier AI GTM event of 2025.
 Watch recordings
 Meet Agentic Summit Partners
 Sponsors
-Get to know our curated mix of agentic AI startups, platforms, and enterprises— each pushing the boundaries of AI-native growth.
+Get to know our curated mix of agentic AI startups, platforms, and enterprises—
+each pushing the boundaries of AI-native growth.
 Priority
 Standard
 Watch recordings
@@ -7396,7 +7419,8 @@ HSE for teams
 Accelerate your team’s revenue growth by leveraging our curated 1:1 coaching cohorts 
 Resources
 Resources
-Explore CXO games and AMA sessions archives, white papers, reports,  and more to build your hard skills and stay ahead
+Explore CXO games and AMA sessions archives, white papers, reports, 
+and more to build your hard skills and stay ahead
 Blog
 Tactics and strategies on building up your hard skills. 
 Reports & guides

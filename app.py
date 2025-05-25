@@ -1,12 +1,11 @@
-
 from fastapi import FastAPI, Request
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.chat_models import ChatOpenAI
-from langchain.chains.retrieval_qa.base import RetrievalQA
+from langchain.chains.conversational_retrieval.base import ConversationalRetrievalChain
+from langchain.prompts import PromptTemplate
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import TextLoader
-from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 import os
 import pathlib
@@ -15,7 +14,6 @@ load_dotenv()
 
 app = FastAPI()
 
-# 1. Ініціалізація компонентів
 llm = ChatOpenAI(
     model_name="gpt-4o-mini",
     temperature=0.0,
@@ -24,7 +22,6 @@ llm = ChatOpenAI(
 
 embeddings = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
 
-# 2. Якщо індексу немає — створюємо з текстового джерела
 index_path = "faiss_index"
 if not pathlib.Path(index_path).exists():
     print("⏳ Створення FAISS-індексу з джерела...")
@@ -42,7 +39,7 @@ else:
 retriever = vectorstore.as_retriever()
 
 custom_prompt = PromptTemplate(
-    input_variables=["context", "chat_history", "query"],
+    input_variables=["context", "question", "chat_history"],
     template="""
 You are the assistant for the AGENTIC AI SUMMIT. Your name is AGENTIC AI SUMMIT Agent.
 
@@ -100,40 +97,38 @@ Chat history:
 {chat_history}
 
 Question:
-{query}
+{question}
 
 Answer:
 """
 )
 
-
-qa_chain = RetrievalQA.from_chain_type(
+# Конструюємо сам chain:
+qa_chain = ConversationalRetrievalChain.from_llm(
     llm=llm,
     retriever=retriever,
-    chain_type_kwargs={"prompt": custom_prompt}
+    combine_docs_chain_kwargs={"prompt": custom_prompt},
 )
-
-
 
 @app.get("/")
 def root():
     return {"message": "AI агент запущений ✅"}
 
-# @app.post("/ask")
-# async def ask_question(request: Request):
-#     data = await request.json()
-#     query = data.get("question")
-#     answer = qa_chain.run(query)
-#     return {"answer": answer}
-
-
 @app.post("/ask")
 async def ask_question(request: Request):
     data = await request.json()
-    query = data.get("question", "")
-    chat_history = data.get("chat_history", "")
+    question = data.get("question", "")
+    chat_history = data.get("chat_history", [])
+    
+    # Примусово переводимо у list of tuples
+    chat_history_tuples = [tuple(item) for item in chat_history]
+
+    print("question:", repr(question), type(question))
+    print("chat_history:", repr(chat_history_tuples), type(chat_history_tuples))
+    
     result = qa_chain.invoke({
-      "query": query,
-      "chat_history": chat_history
+        "question": question,
+        "chat_history": chat_history_tuples
     })
     return {"answer": result}
+

@@ -3,9 +3,7 @@ from fastapi import FastAPI, Request
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_community.chat_models import ChatOpenAI
-# from langchain.chains import RetrievalQA
-from langchain.chains.conversational_retrieval.base import ConversationalRetrievalChain
-from langchain.memory import ConversationBufferMemory
+from langchain.chains.retrieval_qa.base import RetrievalQA
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import TextLoader
 from langchain.prompts import PromptTemplate
@@ -18,7 +16,6 @@ load_dotenv()
 app = FastAPI()
 
 # 1. Ініціалізація компонентів
-# llm = ChatOpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"))
 llm = ChatOpenAI(
     model_name="gpt-4o-mini",
     temperature=0.0,
@@ -45,7 +42,7 @@ else:
 retriever = vectorstore.as_retriever()
 
 custom_prompt = PromptTemplate(
-    input_variables=["context", "question"],
+    input_variables=["chat_history", "question"],
     template="""
 You are the assistant for the AGENTIC AI SUMMIT. Your name is AGENTIC AI SUMMIT Agent.
 
@@ -96,8 +93,8 @@ Instructions:
 - If the question includes a term that closely resembles a known name or topic from the context (e.g. "vivan" instead of "Vivun"), ask the user: "Did you mean 'Vivun'?" before proceeding to answer.
 - If the question does not contain an exact name, try to infer who the question is about based on recent mentions (e.g., "he", "they", "the speaker").
 
-Context:
-{context}
+Chat history:
+{chat_history}
 
 Question:
 {question}
@@ -107,20 +104,12 @@ Answer:
 )
 
 
-# qa_chain = RetrievalQA.from_chain_type(
-#     llm=llm,
-#     retriever=retriever,
-#     chain_type_kwargs={"prompt": custom_prompt}
-# )
-memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
-
-qa_chain = ConversationalRetrievalChain.from_llm(
+qa_chain = RetrievalQA.from_chain_type(
     llm=llm,
     retriever=retriever,
-    memory=memory,
-    condense_question_prompt=custom_prompt,
-    return_source_documents=False  # можеш поставити True, якщо хочеш бачити chunks
+    chain_type_kwargs={"prompt": custom_prompt}
 )
+
 
 
 @app.get("/")
@@ -138,7 +127,10 @@ def root():
 @app.post("/ask")
 async def ask_question(request: Request):
     data = await request.json()
-    query = data.get("question")
-    chat_history = data.get("chat_history", [])
-    answer = qa_chain.run({"question": query, "chat_history": chat_history})
-    return {"answer": answer}
+    question = data.get("question")
+    chat_history = data.get("chat_history", "")
+    result = qa_chain.run({
+        "question": question,
+        "chat_history": chat_history
+    })
+    return {"answer": result}

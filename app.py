@@ -42,7 +42,7 @@ else:
 retriever = vectorstore.as_retriever()
 
 custom_prompt = PromptTemplate(
-    input_variables=["context", "chat_history", "question"],
+    input_variables=["context", "chat_history", "query"],
     template="""
 You are the assistant for the AGENTIC AI SUMMIT. Your name is AGENTIC AI SUMMIT Agent.
 
@@ -100,7 +100,7 @@ Chat history:
 {chat_history}
 
 Question:
-{question}
+{query}
 
 Answer:
 """
@@ -130,10 +130,10 @@ def root():
 @app.post("/ask")
 async def ask_question(request: Request):
     data = await request.json()
-    question = data.get("question")
+    query = data.get("question", "")
     chat_history = data.get("chat_history", "")
     result = qa_chain.invoke({
-     "question": question,
-     "chat_history": chat_history
+      "query": query,
+      "chat_history": chat_history
     })
     return {"answer": result}

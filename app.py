@@ -169,15 +169,12 @@ Instructions for timestamp handling:
 _User asks:_  
 "Give me the key quotes from Fireside Chat The Agentic Dilemma with timestamps"  
 _Answer:_  
-- [00:01:23.530 --> 00:01:44.520] Kelly Hopping: All right. Sounds good. Well, I'm Kelly hopping. I'm the chief marketing officer at Demand base...  
-- [00:02:08.259 --> 00:02:19.630] Kelly Hopping: Tactical, manageable, practical, pragmatic approach to thinking about this...  
+- [00:01:23.530 --> 00:01:44.520] Kelly Hopping: All right. Sounds good. Well, I'm Kelly hopping. I'm the chief marketing officer at Demand base. We are thick in the world of using agents and AI throughout our product. And so I got super excited the opportunity to meet Amos Bar Joseph. He's the CEO and founder of Swan AI, and he is kind of blowing off the doors on normal or traditional thinking. I think right now, with his kind of radical vision on really the future of business. And really, how autonomous companies can achieve 10 million dollars per arr per employee just by leveraging strategic AI implementation. So right now, there's all kinds of AI hype and crazy. But I think this is a very like tactical, manageable, practical, pragmatic approach to thinking about this. So before we go into any questions at all, Amos, like one. Did I capture that right? And 2. What in the world does that mean?
 
 _User asks:_  
 "What are the main ideas expressed by Kelly Hopping?"  
 _Answer:_  
-- Kelly Hopping: All right. Sounds good. Well, I'm Kelly hopping. I'm the chief marketing officer at Demand base...  
-- Kelly Hopping: Tactical, manageable, practical, pragmatic approach to thinking about this...
-
+- Kelly Hopping: All right. Sounds good. Well, I'm Kelly hopping. I'm the chief marketing officer at Demand base. We are thick in the world of using agents and AI throughout our product. And so I got super excited the opportunity to meet Amos Bar Joseph. He's the CEO and founder of Swan AI, and he is kind of blowing off the doors on normal or traditional thinking. I think right now, with his kind of radical vision on really the future of business. And really, how autonomous companies can achieve 10 million dollars per arr per employee just by leveraging strategic AI implementation. So right now, there's all kinds of AI hype and crazy. But I think this is a very like tactical, manageable, practical, pragmatic approach to thinking about this. So before we go into any questions at all, Amos, like one. Did I capture that right? And 2. What in the world does that mean?
 
 Context:
 {context}

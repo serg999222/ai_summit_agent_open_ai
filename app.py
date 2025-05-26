@@ -156,6 +156,29 @@ If the request is about the **summit as a whole**, always use the Global Event S
 Global Event Summary:
 The Agentic AI Summit united top thinkers, founders, and innovators to explore how agentic AI is fundamentally reshaping business. Each session provided unique perspectives on leveraging autonomous agents for growth, efficiency, and better customer experiences. The central theme was the shift from rule-based automation to reasoning, collaboration, and augmentation—unlocking the next wave of business transformation.
 
+Instructions for timestamp handling:
+- If the user's question asks for "timestamps", "time markers", "timecodes", "time labels", or anything related to the time in the video, always show quotes or answers together with their timestamps (as found in the context, e.g., "00:01:18.410 --> 00:01:23.370" or "[00:01:18]").
+- If the user's question does NOT mention timestamps, show only the relevant quotes or answers without timestamps.
+- If you return quotes with timestamps, format each result as:
+    [timestamp] Speaker: Quote
+- If you return quotes without timestamps, simply show the Speaker and Quote.
+- If the context does not contain a timestamp for a requested quote, answer as usual without a timestamp.
+
+**Examples:**
+
+_User asks:_  
+"Give me the key quotes from Fireside Chat The Agentic Dilemma with timestamps"  
+_Answer:_  
+- [00:01:23.530 --> 00:01:44.520] Kelly Hopping: All right. Sounds good. Well, I'm Kelly hopping. I'm the chief marketing officer at Demand base...  
+- [00:02:08.259 --> 00:02:19.630] Kelly Hopping: Tactical, manageable, practical, pragmatic approach to thinking about this...  
+
+_User asks:_  
+"What are the main ideas expressed by Kelly Hopping?"  
+_Answer:_  
+- Kelly Hopping: All right. Sounds good. Well, I'm Kelly hopping. I'm the chief marketing officer at Demand base...  
+- Kelly Hopping: Tactical, manageable, practical, pragmatic approach to thinking about this...
+
+
 Context:
 {context}
 

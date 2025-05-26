@@ -68,7 +68,8 @@ def clean_text(content):
             continue
 
     # Прибираємо зайві пусті рядки
-    cleaned = [s for s in output_buffer if s.strip() != ""]
+    # cleaned = [s for s in output_buffer if s.strip() != ""]
+    cleaned = output_buffer
     return "\n".join(cleaned)
 
 

@@ -27,8 +27,25 @@ if not pathlib.Path(index_path).exists():
     print("⏳ Створення FAISS-індексу з джерела...")
     loader = TextLoader("data_base.txt", encoding='utf-8')
     documents = loader.load()
-    splitter = RecursiveCharacterTextSplitter(chunk_size=5000, chunk_overlap=100)
+    splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
     chunks = splitter.split_documents(documents)
+    # === Додаємо цей блок для дебагу ===
+   #  for i, chunk in enumerate(chunks):
+   #   # chunk.page_content — текст чанка
+   #   length = len(chunk.page_content)
+   #   preview = chunk.page_content[:100].replace('\n', ' ')
+   #   print(f"Chunk {i}: {length} symbols. Start: {preview!r}")
+   #   # Позначити надвеликий chunk
+   #   if length > 4000:  # або твій ліміт
+   #      print("⚠️  BIG CHUNK detected above limit!")
+
+   #  with open("big_chunks_debug.txt", "w", encoding="utf-8") as f:
+   #   for i, chunk in enumerate(chunks):
+   #      length = len(chunk.page_content)
+   #      if length > 4000:
+   #          f.write(f"Chunk {i}: {length} symbols\n{chunk.page_content}\n{'-'*80}\n\n")
+
+
     vectorstore = FAISS.from_documents(chunks, embeddings)
     vectorstore.save_local(index_path)
     print("✅ Індекс створено.")

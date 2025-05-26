@@ -1,31 +1,76 @@
 import os
 import re
 
+# def clean_text(content):
+#     lines = content.splitlines()
+#     cleaned = []
+#     buffer = ""
+
+#     for line in lines:
+#         line = line.strip()
+
+#         # Пропуск номерів та таймкодів
+#         if re.match(r"^\d+$", line):
+#             continue
+#         if re.match(r"^\d\d:\d\d:\d\d\.\d+ -->", line):
+#             continue
+#         if line == "":
+#             if buffer:
+#                 cleaned.append(buffer.strip())
+#                 buffer = ""
+#             continue
+
+#         buffer += " " + line
+
+#     if buffer:
+#         cleaned.append(buffer.strip())
+
+#     return "\n\n".join(cleaned)
+
 def clean_text(content):
     lines = content.splitlines()
     cleaned = []
-    buffer = ""
+    date_line = ""
+    output_buffer = []
+
+    # 1. Знаходимо перший непорожній рядок (дату)
+    for line in lines:
+        if line.strip():
+            date_line = line.strip()
+            break
+
+    current_timecode = None
 
     for line in lines:
         line = line.strip()
 
-        # Пропуск номерів та таймкодів
+        # Пропускаємо номери рядків
         if re.match(r"^\d+$", line):
             continue
+
+        # Таймкод
         if re.match(r"^\d\d:\d\d:\d\d\.\d+ -->", line):
+            current_timecode = line
+            output_buffer.append(f"{date_line}   {current_timecode}")
             continue
+
+        # Порожній рядок завершує поточний блок
         if line == "":
-            if buffer:
-                cleaned.append(buffer.strip())
-                buffer = ""
+            if output_buffer and output_buffer[-1] != "":
+                output_buffer.append("")
             continue
 
-        buffer += " " + line
+        # Додаємо текст, якщо це не таймкод і не номер
+        if current_timecode:
+            output_buffer.append(line)
+        else:
+            # Ігноруємо текст до першого таймкоду
+            continue
 
-    if buffer:
-        cleaned.append(buffer.strip())
+    # Прибираємо зайві пусті рядки
+    cleaned = [s for s in output_buffer if s.strip() != ""]
+    return "\n".join(cleaned)
 
-    return "\n\n".join(cleaned)
 
 def process_transcripts(input_folder, output_file):
     with open(output_file, 'w', encoding='utf-8') as outfile:

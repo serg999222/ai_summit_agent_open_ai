@@ -1,15 +1,63 @@
 About Hard Skill Exchange(HSE):
-Hard Skill Exchange operates like a stock market for go-to-market (GTM) skills, providing a live “ticker” of the most in-demand expertise sought by hiring companies. Professionals can instantly identify high-value skills, access real-time coaching and mentorship from top practitioners, and monetize their own expertise through a dynamic, integrated marketplace.
+Hard Skill Exchange (HSE) is a leading virtual event and community platform focused on Go-to-Market (GTM), artificial intelligence (AI), and business transformation. HSE connects top B2B leaders, executives, and practitioners through large-scale summits, executive roundtables, and ongoing educational sessions.
 
-About Hard Skill Exchange:
-For organizations, HSE accelerates the development of essential and cutting-edge GTM capabilities like AI, delivering measurable ROI. Backed by a network of 20,000+ GTM leaders from Cisco, Okta, Salesforce, DocuSign, and Gong, the platform transforms skill-building into a competitive advantage.
+About Hard Skill Exchange: Mission and Vision
+HSE’s mission is to accelerate growth, knowledge sharing, and practical adoption of AI and advanced business technologies in the GTM space. The company enables industry professionals to stay ahead of market trends, exchange insights, and form valuable business connections.
 
-About Hard Skill Exchange:
-With its quarterly AI Summits, AI Practice Sessions, weekly CXO Games, and tailored 1:1, HSE enables teams to scale expertise, adapt to market shifts, and thrive in fast-moving industries. Visit us at hardskillexchange.com to see how HSE is redefining upskilling in the age of AI.
-
-About Hard Skill Exchange:
-The CEO of Hard Skill Exchange is Julia Nimchinski
+About Hard Skill Exchange: Key Leadership
+Julia Nimchinski is the CEO (Director) and co-founder of Hard Skill Exchange. She is recognized for her innovative approach to virtual events, community building, and practical education for the B2B sector. Under Julia’s leadership, HSE has become a go-to platform for top executives and thought leaders in the AI and GTM space.
 Website: https://hardskill.exchange/
+
+About Hard Skill Exchange: Community & Audience
+Total verified HSE community: 20,000+ GTM leaders and practitioners worldwide
+Slack community: 8,000+ active members
+Email engagement: 49% average open rate
+Seniority: 70% of members are senior management, founders, or GTM community leaders
+Geography: Strong presence in New York, London, San Francisco, Boston, Toronto, and other major business hubs
+
+About Hard Skill Exchange: Flagship Event: Agentic AI Summit
+Description: The Agentic AI Summit is a premier, multi-day online event focused on agentic automation, AI-native business models, and the practical application of AI in business.
+Audience: More than 1,000 registrants, over 50 high-profile speakers, senior-level attendees (C-level, VP, Director, and top GTM leaders)
+Key companies represented: Zapier, G2, Gainsight, 6sense, Paid, and more
+Format: Fireside chats, executive roundtables, solution demos, keynote panels, and networking sessions
+Notable speakers include: Godard Abel (CEO of G2), Wade Foster (Co-Founder & CEO of Zapier), Jon Miller (Co-Founder of Engagio), Omer Gotlieb (Co-Founder of Totango), Hyoun Park (CEO & Chief Analyst, Amalgam Insights), and many others
+
+About Hard Skill Exchange: Year-Round Programming
+Monthly Executive Roundtables: Interactive, small-group sessions for leaders to discuss emerging trends, best practices, and challenges in GTM and AI.
+Practice Sessions: Deep-dive, hands-on workshops focused on specific tools, frameworks, and AI-driven business transformation.
+On-demand Learning: Library of recorded sessions, interviews, and resource materials for continuous learning.
+
+About Hard Skill Exchange: Community Impact
+HSE has hosted 40+ virtual summits and executive roundtables since 2022.
+Each event typically attracts hundreds to over a thousand live participants.
+The platform facilitates both thought leadership and actionable takeaways, empowering attendees to implement new strategies within their organizations.
+
+About Hard Skill Exchange: Partnership & Sponsorship
+Partner opportunities: HSE offers three main sponsorship packages (Standard, Priority, Supreme) for tech vendors and consulting partners.
+Standard: Demo session, inclusion in all event communications, branding in post-event content
+Priority: All Standard benefits plus panel or roundtable participation, opt-in attendee list, and more
+Supreme: Most exclusive; featured sponsor status, keynote participation, expanded attendee list, enhanced branding and communications, and a personal Slack AMA session with the HSE community
+Benefits for sponsors: Direct access to a highly targeted B2B audience, exposure to senior GTM and AI leaders, and opportunities to generate high-value sales opportunities
+
+About Hard Skill Exchange: Unique Value Proposition
+Trusted access: HSE curates its community, ensuring sponsors and speakers reach real, verified decision-makers in the GTM and AI landscape.
+Content quality: Programs feature cutting-edge thought leadership, emerging technology demos, and actionable frameworks for business leaders.
+Community-driven: Strong, ongoing engagement through Slack, events, and email, keeping HSE members informed and connected.
+
+About Hard Skill Exchange: Statistics
+Average event attendance: 1,000+ per summit
+Community open rate (email): 49%
+Geographical spread: Attendees from leading global markets
+Community engagement: 8,000+ on Slack, 20,000+ verified members
+
+About Hard Skill Exchange: Notable Quotes
+“Agentic automation is redefining how B2B companies operate, compete, and grow. The Agentic AI Summit is where the most forward-thinking leaders come to learn and connect.”
+“With HSE, you don’t just attend another webinar—you become part of a dynamic, action-oriented GTM community.”
+
+About Hard Skill Exchange: Company Contact
+Website: https://hardskill.exchange/
+email: julia@hardskill.exchange
+support: support@hardskill.exchange
 
 May 6 — Fireside Chat with Amos Bar-Joseph — The Autonomous Business OS (Panel Summary):
 Discussed the end of “growth at all costs” and the rise of the autonomous business operating system, where efficiency and AI augmentation are core. Emphasized the shift from scaling by headcount to scaling by intelligence. Highlighted the importance of human-AI collaboration: using AI to multiply the impact of top human talent, not just to replace jobs.

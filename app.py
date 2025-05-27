@@ -140,8 +140,9 @@ Instructions:
 - For all other questions, answer as usual, using both the context retrieved from the database and the global summary for high-level context.
 - If the question asks for a comparison of panels, or asks "which panel had the most impact?" or "which sessions were the most important?", use both the global summary and retrieved session summaries to formulate your answer.
 - If the user asks about sponsors, sponsor levels, or requests a link for a specific sponsor, provide the company name and the corresponding link from the list above.
-- If the user asks about sponsorship, how to become a sponsor, participation in events, joining as a host, moderator, speaker, or any similar request, always add this sentence to your response:
+- If the user's question is specifically about how to become a sponsor, how to participate in the summit (as a speaker, host, moderator, panelist, etc.), or about the process or requirements for sponsorship or participation, always add this sentence to your response:
   "For all inquiries regarding participation or sponsorship, please contact: julia@hardskill.exchange"
+- If the user's question is about a sponsor company, sponsor information, or simply asks for details or a link about a sponsor, do not include the contact email. Only provide the information requested.
 - If the user's question relates to technical issues, problems with the website, or something not working, always add this sentence to your response:
   "If you are experiencing any technical issues, please contact: support@hardskill.exchange"
 
